@@ -1,0 +1,241 @@
+/*.preguntas {
+  display: flex;
+}
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+.preguntas {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  padding-left: 1em;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 1em;
+}
+#contacto {
+  padding-left: 1em;
+}
+
+.contenedor {
+  margin-top: 2em;
+  width: 64%;
+  flex-wrap: wrap;
+}
+.contenedor div {
+  font-family: "Coming Soon", cursive;
+  font-weight: 900;
+  display: block;
+  /* border: 1px solid black;*/
+  text-align: center;
+  padding: 0.3em;
+  cursor: pointer;
+}
+
+.contenedor div:hover {
+  transform: rotate(-0.01turn);
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+}
+
+/*---PREGUNTAS COLORES---*/
+
+.uno {
+  color: #ffc400;
+  font-size: 3em;
+  grid-column: 1 / span 4;
+  grid-row: 1;
+}
+
+.dos {
+  color: #8149be;
+  font-size: 2em;
+  grid-column: 5 / span 2;
+  grid-row: 1;
+}
+
+.tres {
+  color: #ff9435;
+  font-size: 2.5em;
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
+
+.cuatro {
+  color: #1ccf2f;
+  font-size: 1.5em;
+  grid-column: 3 / span 4;
+  grid-row: 2;
+}
+
+.cinco {
+  color: #3a33ff;
+  font-size: 2em;
+  grid-column: 1 / span 2;
+  grid-row: 3;
+}
+
+#seis {
+  font-size: 1.5em;
+  color: #55b4ae;
+  grid-column: 3 / span 2;
+  grid-row: 3;
+  padding-top: 1.5em;
+}
+
+.siete {
+  font-size: 1.5em;
+  color: #c1696b;
+  grid-column: 5 / span 2;
+  grid-row: 3;
+}
+
+.ocho {
+  color: #dbe9d8;
+  font-size: 1.5em;
+  grid-column: 1 / span 2;
+  grid-row: 4;
+}
+
+.nueve {
+  color: #dddb3e;
+  font-size: 1.5em;
+  grid-column: 3 / span 4;
+  grid-row: 4;
+}
+
+.diez {
+  color: #a78e54;
+  font-size: 1.8em;
+  grid-column: 1 / span 6;
+  grid-row: 5;
+}
+
+.once {
+  color: #887c77;
+  grid-column: 1 / span 3;
+  grid-row: 6;
+}
+
+.doce {
+  color: #a309ff;
+  font-size: 1.5em;
+  grid-column: 4 / span 3;
+  grid-row: 6;
+}
+
+.trece {
+  color: #e05915;
+  font-size: 3em;
+  grid-column: 1 / span 6;
+  grid-row: 7;
+}
+
+@media (max-width: 900px) {
+  .contenedor {
+    width: 100%;
+  }
+  .carrusel {
+    width: 100%;
+  }
+}
+
+/*---Carrusel---*/
+
+.carrusel {
+  margin-top: 2em;
+  width: 34%;
+}
+
+@media (max-width: 900px) {
+  .carrusel {
+    width: 100%;
+  }
+}
+
+/*---pagos---*/
+
+.pagos {
+  background-image: url(fondowave.png);
+  padding-bottom: 7em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.iconosbancos {
+  margin-left: 2em;
+  width: 40%;
+}
+
+P {
+  font-family: "Vast Shadow", cursive;
+  font-size: 2em;
+  padding-top: 3em;
+  color: white;
+}
+
+.caja {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 15px;
+  opacity: 0.5;
+  padding: 0.5em;
+  width: 80%;
+}
+img {
+  width: 80px;
+  height: 80px;
+}
+
+#cash {
+  width: 65px;
+  height: 65px;
+  margin-bottom: 0.8em;
+}
+
+#davivienda {
+  width: 85px;
+  height: 65px;
+  margin-top: 0.4em;
+}
+
+.envios {
+  width: 35%;
+}
+
+.envios > p {
+  font-size: 1.5em;
+}
+
+#carro {
+  margin-top: 3em;
+  width: 180px;
+  height: 150px;
+  float: right;
+  animation: volar 5s infinite;
+}
+
+@keyframes volar {
+  0% {
+    margin-right: 0px;
+  }
+  100% {
+    margin-right: 1000px;
+  }
+}
