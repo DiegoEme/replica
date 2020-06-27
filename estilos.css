@@ -170,6 +170,7 @@ ul {
 .pagos {
   background-image: url(fondowave.png);
   padding-bottom: 7em;
+  background-size: cover;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -181,7 +182,9 @@ ul {
   width: 40%;
 }
 
-P {
+/*.pagos .iconosbancos > p,
+.pagos .envios >*/
+p {
   font-family: "Vast Shadow", cursive;
   font-size: 2em;
   padding-top: 3em;
@@ -219,6 +222,18 @@ img {
   width: 35%;
 }
 
+@media (max-width: 900px) {
+  .envios {
+    width: 100%;
+
+    margin-left: 2em;
+  }
+  .iconosbancos {
+    margin-left: 2em;
+    width: 100%;
+  }
+}
+
 .envios > p {
   font-size: 1.5em;
 }
@@ -237,5 +252,68 @@ img {
   }
   100% {
     margin-right: 1000px;
+  }
+}
+
+/*---DATOS---*/
+
+.datos {
+  background-color: #ffe076;
+  background-image: url(wavesf.png);
+  padding-bottom: 3em;
+  background-size: cover;
+}
+
+h2 {
+  display: block;
+
+  text-align: center;
+  padding-top: 1.5em;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#container > .beneficios {
+  width: 30%;
+  margin: auto;
+}
+
+.reloj {
+  height: 150px;
+}
+
+h4,
+h2,
+h6 {
+  font-family: "Coming Soon", cursive;
+  text-align: center;
+}
+
+.beneficios {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: auto;
+}
+
+.img1 {
+  grid-row: 1 / span 4;
+  grid-column: 1;
+}
+.t1 {
+  grid-row: 1 / span 2;
+  grid-column: 2;
+}
+.p1 {
+  grid-row: 3 / span 2;
+  grid-column: 2;
+}
+
+@media (max-width: 900px) {
+  #container > .beneficios {
+    width: 90%;
+    margin: auto;
   }
 }
