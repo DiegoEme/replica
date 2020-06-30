@@ -317,3 +317,41 @@ h6 {
     margin: auto;
   }
 }
+
+/*---footer---*/
+
+footer > h5 {
+  display: block;
+  font-stretch: extra-condensed;
+  text-align: center;
+  font-family: "Coming Soon", cursive;
+}
+
+footer .social-list {
+  font-size: 3em;
+  text-align: center;
+  padding: 0 0.7em;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5em auto;
+  display: flex;
+}
+
+.social-list__item {
+  margin: 0 0.5em;
+}
+
+.social-list a:hover i {
+  color: black;
+  transform: translate(0, -5px);
+}
+
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: auto;
+  justify-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 3em;
+}
